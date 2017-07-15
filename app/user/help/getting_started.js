@@ -3,10 +3,10 @@
 app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.portsList = {};
 	$scope.selected = [];
-	$scope.configs = [false, false, false];
+	$scope.configs = [false, false, false, false, false, false];
 	
 	$scope.showConfig = function (id) {
-		$scope.configs[id] = !$scope.configs[id];
+		$scope.configs[id] = !$scope.configs[id]; //todo: when one value turns true, make all others false; also, figure out why it was also working with only 3 values rather than 6?
 	};
 
 	$scope.promise = dataService.getData("/pool/ports", function(data){
