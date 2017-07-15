@@ -20,9 +20,9 @@
 			</md-toolbar>
 			<md-card-content>
 				<p class="panel-subtitle">You can choose between online wallets and hardware wallets - both have their pros and cons.</p>
-				<p><a href="https://www.mymonero.com" target="_blank">MyMonero</a>: MyMonero is an online wallet maintained by a member of the core monero team, so while safe is still suceptable to hacks.</p>
+				<p><a href="https://www.mymonero.com" target="_blank">MyMonero</a>: MyMonero is an online wallet maintained by a member of the core monero team, so while safe,	 it's still suceptable to hacks.</p>
 				<p><a href="https://getmonero.org/2017/03/29/monero-gui-beta-2-released.html" target="_blank">Monero GUI Wallet (beta2)</a>: The safest way to store and secure your XMR, although it would be your responsibility to keep your XMR safe.</p>
-				<p><a href="https://moneroaddress.org/" target="_blank">Offline wallet generator</a>: Let's you generate a wallet with no internet connetion for better security. To later check the ballance Monero GUI is best choice.</p>
+				<p><a href="https://moneroaddress.org/" target="_blank">Offline wallet generator</a>: Lets you generate a wallet with no internet connetion for better security. To later check the ballance Monero GUI is best choice.</p>
 			</md-card-content>
 		</md-card>
 		<md-card>
@@ -33,8 +33,32 @@
 			</md-toolbar>
 			<md-card-content>
 				<p class="panel-subtitle">You can choose from variety of miners.</p>
-				<p>All are nice pieces of software and you should try what suits you best. Most common are <a href="https://github.com/fireice-uk/xmr-stak-cpu/releases" target="_new" style="text-decoration: underline">xmr-stak-cpu</a>/<a href="https://github.com/fireice-uk/xmr-stak-amd/releases" target="_new" style="text-decoration: underline;">amd</a>, <a href="https://github.com/wolf9466/wolf-xmr-miner/releases" target="_new" style="text-decoration: underline;">wolf's miner</a>, <a href="https://bitcointalk.org/index.php?topic=638915.0" target="_new" style="text-decoration: underline;">claymore's miner</a>, <a href="https://github.com/KlausT/ccminer-cryptonight/releases" target="_new" style="text-decoration: underline;">ccminer-cryptonight</a>.</p>
-				<p><h3>More info soon.</h3></p>
+				<p>All are nice pieces of software and you should try what suits you best. The most popular are <a href="https://github.com/fireice-uk/xmr-stak-cpu/releases" target="_new" style="text-decoration: underline">xmr-stak-cpu</a>/<a href="https://github.com/fireice-uk/xmr-stak-amd/releases" target="_new" style="text-decoration: underline;">amd</a>/<a href="https://github.com/fireice-uk/xmr-stak-nvidia/releases" target="_new" style="text-decoration: underline;">nvidia</a>, <a href="https://github.com/xmrig/xmrig/releases" target="_new" style="text-decoration: underline;">xmrig cpu miner</a>, <a href="https://bitcointalk.org/index.php?topic=638915.0" target="_new" style="text-decoration: underline;">Claymore's amd miner</a>, <a href="https://github.com/KlausT/ccminer-cryptonight/releases" target="_new" style="text-decoration: underline;">ccminer-cryptonight</a>.</p>
+				<p><h3>Setup guides:</h3></p>
+					<md-button ng-click="showConfig(0)">xmr-stak-cpu</md-button>
+					<md-button ng-click="showConfig(1)">xmr-stak-amd</md-button>
+					<md-button ng-click="showConfig(2)">xmr-stak-nvidia</md-button>
+					<md-button ng-click="showConfig(3)">xmrig cpu miner</md-button>
+					<md-button ng-click="showConfig(4)">Claymore's amd miner</md-button>
+					<md-button ng-click="showConfig(5)">ccminer-cryptonight</md-button>
+				<div ng-show="configs[0]">
+					<p>xmr-stak-cpu</p>
+				</div>
+				<div ng-show="configs[1]">
+					<p>xmr-stak-amd</p>
+				</div>
+				<div ng-show="configs[2]">
+					<p>xmr-stak-nvidia</p>
+				</div>
+				<div ng-show="configs[3]">
+					<p>xmrig cpu miner</p>
+				</div>
+				<div ng-show="configs[4]">
+					<p>Claymore's amd miner</p>
+				</div>
+				<div ng-show="configs[5]">
+					<p>ccminer-cryptonight</p>
+				</div>
 			</md-card-content>
 		</md-card>
 				<md-card>

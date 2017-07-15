@@ -3,6 +3,11 @@
 app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.portsList = {};
 	$scope.selected = [];
+	$scope.configs = [false, false, false];
+	
+	$scope.showConfig = function (id) {
+		$scope.configs[id] = !$scope.configs[id];
+	};
 
 	$scope.promise = dataService.getData("/pool/ports", function(data){
 		$scope.portsList = data;
