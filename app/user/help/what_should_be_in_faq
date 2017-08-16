@@ -1,1 +1,22 @@
+Multiple categories: pool-related, mining-related, monero-related
+Pool:
+0) Where can I see my stats (balance, hashrate)?
+1) When does my total balance update?
+2) When do I get my payout?
+3) What is the default payout threshold? How do I change it?
+4) How do I register to the pool?
+5) How much is the payout tx fee?
 
+Mining:
+1) What is fixed difficulty? Do I need it/how do I set it?
+2) How to set up snipa proxy?
+3) What is PPLNS?
+4) What is "effort"?
+5) Does pool hashrate affect my earnings? And what actually does?
+6) What is "window"
+
+Monero:
+1) How to create a wallet?
+2) How does monero work?
+3) How do I set up a personal node on a VPS?
+4) Where can I buy/sell Monero?
