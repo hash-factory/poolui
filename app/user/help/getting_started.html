@@ -15,7 +15,7 @@
 		<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 				<div class="md-toolbar-tools">
-					<span class="md-title">If you don't have a wallet create one</span>
+					<span class="md-title">Step 1) If you don't have a wallet, create one</span>
 				</div>
 			</md-toolbar>
 			<md-card-content>
@@ -28,12 +28,13 @@
 		<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 			  <div class="md-toolbar-tools">
-			    <span class="md-title">Pick a miner for cpu, gpu or both</span>
+			    <span class="md-title">Step 2) Pick a miner for cpu, gpu, or both</span>
 			  </div>
 			</md-toolbar>
 			<md-card-content>
 				<p class="panel-subtitle">You can choose from variety of miners.</p>
 				<p>All are nice pieces of software and you should try what suits you best. The most popular are <a href="https://github.com/fireice-uk/xmr-stak-cpu/releases" target="_new" style="text-decoration: underline">xmr-stak-cpu</a>/<a href="https://github.com/fireice-uk/xmr-stak-amd/releases" target="_new" style="text-decoration: underline;">amd</a>/<a href="https://github.com/fireice-uk/xmr-stak-nvidia/releases" target="_new" style="text-decoration: underline;">nvidia</a>, <a href="https://github.com/xmrig/xmrig/releases" target="_new" style="text-decoration: underline;">xmrig cpu miner</a>, <a href="https://bitcointalk.org/index.php?topic=638915.0" target="_new" style="text-decoration: underline;">Claymore's amd miner</a>, <a href="https://github.com/KlausT/ccminer-cryptonight/releases" target="_new" style="text-decoration: underline;">ccminer-cryptonight</a>.</p>
+				<p>Have a look at <a href="https://miner.pizza" target="_new" style="text-decoration: underline;">miner.pizza</a> and <a href="http://monerobenchmarks.info" target="_new" style="text-decoration: underline;">monerobenchmarks.info</a> for some benchmarks. Generally speaking, if you're doing much worse than the best numbers, you probably need to set up your miner better</p>
 				<p><h3>Setup guides:</h3></p>
 					<md-button ng-click="showConfig(0)">xmr-stak-cpu</md-button>
 					<md-button ng-click="showConfig(1)">xmr-stak-amd</md-button>
@@ -41,22 +42,23 @@
 					<md-button ng-click="showConfig(3)">xmrig cpu miner</md-button>
 					<md-button ng-click="showConfig(4)">Claymore's amd miner</md-button>
 					<md-button ng-click="showConfig(5)">ccminer-cryptonight</md-button>
-				<div ng-show="configs[0]">
+				<div ng-show="minerConfigs[0]">
 					<p>xmr-stak-cpu</p>
+					<!--- <div ng-include="'miners/stakCpu.html'"></div> --->
 				</div>
-				<div ng-show="configs[1]">
+				<div ng-show="minerConfigs[1]">
 					<p>xmr-stak-amd</p>
 				</div>
-				<div ng-show="configs[2]">
+				<div ng-show="minerConfigs[2]">
 					<p>xmr-stak-nvidia</p>
 				</div>
-				<div ng-show="configs[3]">
+				<div ng-show="minerConfigs[3]">
 					<p>xmrig cpu miner</p>
 				</div>
-				<div ng-show="configs[4]">
+				<div ng-show="minerConfigs[4]">
 					<p>Claymore's amd miner</p>
 				</div>
-				<div ng-show="configs[5]">
+				<div ng-show="minerConfigs[5]">
 					<p>ccminer-cryptonight</p>
 				</div>
 			</md-card-content>
@@ -64,7 +66,7 @@
 				<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 			  <div class="md-toolbar-tools">
-			    <span class="md-title">Pick a mining server and port</span>
+			    <span class="md-title">Step 3) Pick a mining server and port</span>
 			  </div>
 			</md-toolbar>
 			<md-card-content>
@@ -80,15 +82,13 @@
 		<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 				<div class="md-toolbar-tools">
-					<span class="md-title">The moment</span>
+					<span class="md-title">Step 4) Set your Username/Password for your miner</span>
 				</div>
 			</md-toolbar>
 			<md-card-content>
 				<p class="panel-subtitle">By now you should have a wallet, mining software, pool url and port. It's time to put them together.</p>
-			
-			
 				<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p>
-				<p>Depending on your miner you need to add the required parameters via command line or config.txt</p>
+				<p>Depending on your miner you need to add the required parameters via command line or by editing the <code>config.txt</code> file included.</p>
 				<p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>
 				<blockquote>
 					<i>Username format</i> : address.paymentID+FixedDifficulty<br/>
@@ -99,11 +99,13 @@
 					<md-divider></md-divider>
 					<md-list-item class="md-3-line" ng-repeat="sample in samples">
 					  <div class="md-list-item-text" layout="column">
-						<h4>## {{ sample.desc }}</h4>
-						<blockquote>
-							<p><b>{{ sample.type }}</b> : {{ sample.sample }}</p>
-							<small class="md-body-1">(e.g. miner.exe -u <i class="truncate">{{(sample.type=="Username") ? sample.sample : 'paymentAddress'}}</i> -p {{(sample.type=="Password") ? sample.sample : 'worker'}})</small><br/>
-						</blockquote>
+					  	<ul>
+					  		<li><h4>{{ sample.desc }}</h4></li>
+							<blockquote>
+								<p><b>{{ sample.type }}</b> : {{ sample.sample }}</p>
+								<small class="md-body-1">(e.g. miner.exe -u <i class="truncate">{{(sample.type=="Username") ? sample.sample : 'paymentAddress'}}</i> -p {{(sample.type=="Password") ? sample.sample : 'worker'}})</small><br/>
+							</blockquote>
+						</ul>
 					  </div>
 					  <md-divider></md-divider>
 					</md-list-item>

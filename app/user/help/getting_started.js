@@ -3,10 +3,25 @@
 app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.portsList = {};
 	$scope.selected = [];
-	$scope.configs = [false, false, false, false, false, false];
+	$scope.minerConfigs = [false, false, false, false, false, false];
+		/*stakCpu: 0,
+		stakAmd: 1,
+		stakNvidia: 2,
+		xmrig: 3,
+		claymore: 4,
+		ccminer: 5,
+		properties: {
+			0: {vis: false},
+			1: {vis: false},
+			2: {vis: false},
+			3: {vis: false},
+			4: {vis: false},
+			5: {vis: false}
+		}
+	};*/
 	
 	$scope.showConfig = function (id) {
-		$scope.configs[id] = !$scope.configs[id]; //todo: when one value turns true, make all others false; also, figure out why it was also working with only 3 values rather than 6?
+		$scope.minerConfigs[id] = !$scope.minerConfigs[id]; //todo: when one value turns true, make all others false; also, figure out why it was also working with only 3 values rather than 6?
 	};
 
 	$scope.promise = dataService.getData("/pool/ports", function(data){
