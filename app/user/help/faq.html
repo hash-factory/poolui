@@ -10,7 +10,7 @@
 					<p class="md-subhead"><b>{{question.title}}</b></p>
 					<p class="md-subhead" ng-bind-html="question.answer"></p>
 					<div ng-if="question.media">
-						<p class="md-subhead">{{question.media.title}}</p>
+						<p class="md-subhead" align="center">{{question.media.title}}</p>
 						<div class="text-center">
 							<iframe width="75%" height="350px" ng-src="{{question.media.url}}" frameborder="0" allowfullscreen></iframe>
 							<br/>
