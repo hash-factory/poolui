@@ -17,7 +17,7 @@ html, body {
 
 a {
   transition: color .4s;
-  color: rgb(0, 130, 130); 
+  color: rgb(232, 76, 5); 
 }
 
 a:link { text-decoration: none; },
@@ -55,7 +55,7 @@ md-sidenav {
 }
 
 md-toolbar {
-	background-color: rgb(0, 130, 130) !important;
+	background-color: rgb(236, 82, 12) !important;
 	font-size: 14px;
 }
 
@@ -64,16 +64,16 @@ md-toolbar {
 }
 
 .material-icons {
-	color: rgb(255, 160, 0);
+	color: #000000;
 }
 
 #main {
-  background: rgb(240, 240, 240); 
+  background: #ffffff;
 }
 
 .maintoolbar {
-  background-color: rgb(0, 130, 130); 
-  color: rgb(255, 255, 255);
+  background-color: rgb(30, 31, 31);
+  color: rgb(30, 31, 31);
  }
 
 .maintoolbar span {
@@ -89,7 +89,7 @@ md-toolbar {
 }
 
 .md-menu-toolbar {
-  background: rgb(0, 130, 130);
+  background: rgb(30, 31, 31);
 }
 
 .md-title {
@@ -115,7 +115,7 @@ md-tooltip .md-content {
 }
 
 .sidenav {
-  background-color: rgb(44,55,66);
+  background-color: rgb(40, 42, 42);
 }
 
 .sidenav ul{
@@ -140,7 +140,7 @@ md-tooltip .md-content {
 }
 
 .sidebar a {
-  color: rgb(66,66,66);
+  color: rgb(29, 30, 31);
   text-decoration: none;
   margin: 0;
   font-size: 14px;
@@ -160,7 +160,7 @@ md-tooltip .md-content {
 }
 
 .logo {
-  background: rgb(30,30,30) !important;
+  background: rgb(255, 255, 255) !important;
   color: rgb(255, 255, 255) !important;
   font-size: 20px;
 }
@@ -250,7 +250,7 @@ md-tooltip .md-content {
   -webkit-transform: scale(0.60);
   -moz-transform:scale(0.60);
   font-size: 64px !important;
-  color: rgb(255, 160, 0);
+  color: rgb(255, 255, 255);
 }
 
 .valid {
