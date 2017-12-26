@@ -4,8 +4,8 @@ angular.module('pool.globals', [])
 
 .factory('GLOBALS', function() {
 	return {
-		pool_name: "supportXMR.com",
-		api_url : 'https://supportxmr.com/api',
+		pool_name: "semiPOOL.com",
+		api_url : 'http://aeon.semipool.com/api',
 		api_refresh_interval: 30000,
 		app_update_interval: 10*60000
 	};
