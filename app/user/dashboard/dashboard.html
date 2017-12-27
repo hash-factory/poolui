@@ -11,7 +11,7 @@
 				<md-list>
 					<md-list-item>
 						<p> Hash Rate </p>
-						<p class="text-right">{{network.difficulty | difficultyToHashRate | toHashRate | 2}}</p>
+						<p class="text-right">{{network.difficulty | difficultyToHashRate | toHashRate }}</p>
 					</md-list-item>
 					<md-list-item>
 						<p> Difficulty </p>
@@ -64,7 +64,7 @@
 									</md-list-item>
 									<md-list-item>
 										<p> Block Reward </p>
-										<p class="text-right">{{lastBlock[pooltype].value | toXMR | number:10}} XMR</p>
+										<p class="text-right">{{lastBlock[pooltype].value | toXMR | number:10}} AEON</p>
 									</md-list-item>
 									<md-list-item>
 										<p> Time Found </p>
