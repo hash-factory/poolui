@@ -35,7 +35,7 @@
 					<md-card-title-text>
 						<div class="md-headline">{{((network.difficulty | difficultyToHashRate)/(360*poolStats.global.hashRate)) | number}}</div>
 						<div class="md-subhead">
-							<span>Next Block Time(days)</span>
+							<span>Next Block Time (days)</span>
 							<md-tooltip md-direction="bottom">
 						    	{{poolStats.global.lastBlockFoundTime*1000 | date:'HH:mm:ss dd/MM/yy'}}
 						     </md-tooltip>
