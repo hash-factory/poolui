@@ -29,7 +29,7 @@ angular.module('utils.strings', [])
 
 .filter('difficultyToHashRate', function() {
   return function(hashrate) {
-    return Math.floor(hashrate / 240)
+    return Math.floor(hashrate / 60)
   };
 });
 
