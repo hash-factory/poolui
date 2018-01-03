@@ -3,14 +3,6 @@
 app.controller('DashboardCtrl', function($scope , $route, $mdDialog, $pageVisibility, dataService, timerService, addressService, minerService) {
 	$scope.minerStats = {};
 	
-        $.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
-		$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
-	});
-	$.getJSON("https://api.coinmarketcap.com/v1/ticker/electroneum/?convert=USD", function(data) {
-		$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
-	});	
 	$scope.updateCharts = function (){
 		minerService.updateStats($scope.addrStats, function(minerStats){
 			$scope.minerStats = minerStats;
