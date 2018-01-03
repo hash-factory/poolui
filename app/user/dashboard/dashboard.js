@@ -3,6 +3,9 @@
 app.controller('DashboardCtrl', function($scope , $route, $mdDialog, $pageVisibility, dataService, timerService, addressService, minerService) {
 	$scope.minerStats = {};
 	
+        $.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
+		$scope.aeonusd = (data.ticker.price * 1).toFixed(2);						// CRYPTONATOR XMR/USD RATE
+	});	
 	$scope.updateCharts = function (){
 		minerService.updateStats($scope.addrStats, function(minerStats){
 			$scope.minerStats = minerStats;
