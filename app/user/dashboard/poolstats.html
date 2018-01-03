@@ -26,7 +26,7 @@
 					<md-card-title-text>
 						<div class="md-headline">{{poolStats.global.totalBlocksFound}}</div>
 						<div class="md-subhead">
-							<span>Blocks Found (<span am-time-ago="poolStats.global.lastBlockFoundTime*1000"></span>)
+							<span>Blocks Found
 							<md-tooltip md-direction="bottom">
 						    	{{poolStats.global.lastBlockFoundTime*1000 | date:'HH:mm:ss dd/MM/yy'}}
 						     </md-tooltip>
@@ -74,7 +74,7 @@
 						</div>
 					</md-card-title-media>
 					<md-card-title-text>
-						<span class="md-headline">{{poolStats.global.totalMinersPaid}}</span>
+						<span class="md-headline">{{aeonusd}}</span>
 						<span class="md-subhead">AEON to USD <a href="#/payments">({{poolStats.global.totalPayments}} Payments)</a></span>
 					</md-card-title-text>
 
