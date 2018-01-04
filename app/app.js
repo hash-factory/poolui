@@ -230,7 +230,7 @@ var app = angular.module('poolui', [
 				$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
 				//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
 			});
-		}, 2000); 
+		}, 60000); 
 		// Start address tracking servuce after starting timer, only one callback supported at a time
 		addressService.start(function(addrStats) {
 			$scope.addrStats = addrStats;
