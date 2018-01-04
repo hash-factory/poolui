@@ -157,18 +157,18 @@
 			<div flex layout="column" layout-md="row" layout-gt-md="row" class="text-center">
 				<div flex layout="column" layout-gt-xs="row">
 					<div flex>
-						<h4> Hash Rate (24h Avg)<h2>{{miner.hash | toHashRate}} ({{minerStats[addr].dataset['global'].avghstfhour | toHashRate}})</h2></h4>
+						<h4> Hash Rate (24h Avg)<br><h2>{{miner.hash | toHashRate}} ({{minerStats[addr].dataset['global'].avghstfhour | toHashRate}})</h2></h4>
 					</div>
 					<div flex>
-						<h4> Total Hashes<h2>{{miner.totalHashes | number}}</h2></h4>
+						<h4> Total Hashes<br><h2>{{miner.totalHashes | number}}</h2></h4>
 					</div>
 				</div>
 				<div flex layout="column" layout-gt-xs="row">
 					<div flex>
-						<h4> Total Due<br><small>(delayed update until each block found)</small><h2>{{miner.amtDue | toXMR | number:10}} ETN</h2></h4>
+						<h4> Total Due<br><i>(delayed update until each block found)</i><h2>{{miner.amtDue | toXMR | number:10}} ETN</h2></h4>
 					</div>
 					<div flex>
-						<h4> Total Paid<h2>{{miner.amtPaid | toXMR | number:10}} ETN</h2></h4>
+						<h4> Total Paid<br><h2>{{miner.amtPaid | toXMR | number:10}} ETN</h2></h4>
 					</div>
 				</div>
 			</div>
