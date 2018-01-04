@@ -6,7 +6,7 @@ angular.module('pool.globals', [])
 	return {
 		pool_name: "semiPOOL.com",
 		api_url : 'https://etn.semipool.com/api',
-		api_refresh_interval: 5000,
+		api_refresh_interval: 2000,
 		app_update_interval: 30*60000
 	};
 });
