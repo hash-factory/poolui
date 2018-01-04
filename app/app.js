@@ -221,7 +221,7 @@ var app = angular.module('poolui', [
 		timerService.startTimer(GLOBALS.api_refresh_interval);
 		timerService.register(loadData, 'global');
 		$interval(updateCache, GLOBALS.app_update_interval); // check for app updates every 5 mins
-		setInterval(function(){
+		$interval(function(){
                 // Start price timer
 	        	$.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
 				$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
