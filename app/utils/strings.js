@@ -11,7 +11,7 @@ angular.module('utils.strings', [])
 .filter('toHashRate', function() {
   return function(hashes) {
     
-  $.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
+        $.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
 		$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
 		//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
 	});
