@@ -4,15 +4,7 @@ app.controller('HomeCtrl', function($scope, $route, dataService, timerService) {
 
     function ticker() {
         dataService.getData("/pool/chart/hashrate/pplns", function(data){
-		
-        $.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
-		$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
-	});
-	$.getJSON("https://api.coinmarketcap.com/v1/ticker/electroneum/?convert=USD", function(data) {
-		$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
-	});
+ 
             data = _.forEach(data, function(element) {
                 element.ts = new Date(element.ts);
 		element.hs = element.hs/1000;
@@ -68,16 +60,7 @@ app.controller('HomeCtrl', function($scope, $route, dataService, timerService) {
 		element.ts = i;
 		i-=1;
             });
-		
-	$.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
-		$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
-	});
-	$.getJSON("https://api.coinmarketcap.com/v1/ticker/electroneum/?convert=USD", function(data) {
-		$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
-	});
-		
+ 
             $scope.poolEffortChart = {
                 datasets: { global: data },
                 options: {
@@ -103,16 +86,7 @@ app.controller('HomeCtrl', function($scope, $route, dataService, timerService) {
             data = _.forEach(data, function(element) {
                 element.ts = new Date(element.ts);
             });
-
-	$.getJSON("https://api.cryptonator.com/api/ticker/aeon-usd", function(data) {
-		$scope.aeonusd = (data.ticker.price * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
-	});
-	$.getJSON("https://api.coinmarketcap.com/v1/ticker/electroneum/?convert=USD", function(data) {
-		$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
-		//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
-	});
-		
+ 
             $scope.poolMinersChart = {
                 datasets: { global: data },
                 options: {
