@@ -33,7 +33,7 @@
 						</div>
 					</md-card-title-text>
 					<md-card-title-text>
-						<div class="md-headline">{{((network.difficulty | difficultyToHashRate)/(360*poolStats.global.hashRate)) | number}}</div>
+						<div class="md-headline">{{((network.difficulty | difficultyToHashRate)/(1440*poolStats.global.hashRate)) | number}}</div>
 						<div class="md-subhead">
 							<span>Time Per Block (days)</span>
 							<md-tooltip md-direction="bottom">
