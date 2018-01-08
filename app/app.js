@@ -73,7 +73,7 @@ var app = angular.module('poolui', [
                         activetab: 'help'
                 });
 
-		$routeProvider.otherwise({redirectTo: '/home'});
+		$routeProvider.otherwise({redirectTo: '/dashboard'});
 
 	}]);
 
@@ -82,7 +82,7 @@ var app = angular.module('poolui', [
 		var appCache = window.applicationCache;
 		$scope.$storage = $localStorage;
 
-		$scope.poolList = ["pplns", "pps", "solo"];
+		$scope.poolList = ["pplns"];
 		$scope.poolStats = {}; // All Pool stats
         $scope.poolHashrateChart = {}; // hashrate history
         $scope.poolMinersChart = {}; // miners history
