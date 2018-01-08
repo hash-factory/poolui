@@ -90,6 +90,23 @@
 			</md-card-content>
 		</md-card></div>
 	</div>
+
+<form layout layout-align="center" layout-padding>
+	<div layout="row" flex>
+		<md-input-container flex class="md-icon-float md-block md-title">
+			<label>Enter Payment Address</label>
+			<!-- below is the material icons -->
+			<md-icon class="material-icons">account_balance_wallet</md-icon>
+			<input type="text" ng-model="paymentAddress">
+		</md-input-container>
+		<div>
+			<md-button class="md-raised md-primary" ng-click="addAddress()">
+				<md-icon md-font-set="material-icons">add</md-icon>
+				Track Live Stats
+			</md-button>
+		</div>
+	</div>  
+</form>
 <div layout-md="column" layout-sm="column" layout-xs="column" layout="row" flex ng-repeat="(addr,miner) in addrStats">
 	<md-card flex>
 		<md-toolbar class="md-accent">
