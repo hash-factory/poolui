@@ -43,7 +43,8 @@
 						    	{{((network.difficulty | difficultyToHashRate)/(360*poolStats.global.hashRate)) | number | date:'HH:mm:ss dd/MM/yy'}}
 						        </md-tooltip>
 							<md-divider md-inset></md-divider>
-							<span class="md-subhead">Current effort {{((poolStats.global.roundHashes / network.difficulty)*100).toFixed(1) | number}} %</span>
+							<a href="#/home"><span class="md-subhead">Current effort {{((poolStats.global.roundHashes / network.difficulty)*100).toFixed(1) | number}} %</span>
+							</a>
 						</div>
 					</md-card-title-text>
 				</md-card-title>
