@@ -204,6 +204,14 @@ var app = angular.module('poolui', [
 			dataService.getData("/config", function(data){
 				$scope.config = data;
 			});
+			dataService.getData("/pool/ports", function(data){
+				var total = 0;
+				_.each(data.global, function (port, index) {
+					total +=  port.miners;
+				})
+				$scope.WorkersTotal = total;
+		
+			});
 		}
 
 		// For FAQ
