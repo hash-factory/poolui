@@ -31,8 +31,8 @@
 						        <a href="#/blocks"><span am-time-ago="poolStats.global.lastBlockFoundTime*1000"></span>
 							<md-tooltip md-direction="bottom">
 						    	{{poolStats.global.lastBlockFoundTime*1000 | date:'HH:mm:ss dd/MM/yy'}}
-						     </md-tooltip>
-						     </a>
+						        </md-tooltip>
+						        </a>
 						</div>
 					</md-card-title-text>
 					<md-card-title-text>
@@ -41,7 +41,9 @@
 							<span>Time Per Block (days)</span>
 							<md-tooltip md-direction="bottom">
 						    	{{((network.difficulty | difficultyToHashRate)/(360*poolStats.global.hashRate)) | number | date:'HH:mm:ss dd/MM/yy'}}
-						     </md-tooltip>
+						        </md-tooltip>
+							<md-divider md-inset></md-divider>
+							<span class="md-subhead">Current effort {{((poolStats.global.roundHashes / network.difficulty)*100).toFixed(1) | number}} %</span>
 						</div>
 					</md-card-title-text>
 				</md-card-title>
@@ -60,10 +62,12 @@
 					<md-card-title-text>
 						<span class="md-headline">{{poolStats.global.miners}}</span>
 						<span class="md-subhead">Miners Connected</span>
+						<md-divider md-inset></md-divider>
+						<span class="md-subhead"><a href="#/ports">{{WorkersTotal | number}} Connections Total</a></span>
 					</md-card-title-text>
 					<md-card-title-text>
 						<span class="md-headline">{{poolStats.global.totalMinersPaid}}</span>
-						<span class="md-subhead">Miners Paid <a href="#/payments">({{poolStats.global.totalPayments}} Payments)</a></span>
+						<span class="md-subhead">Miners Paid <a href="#/payments"><md-divider md-inset></md-divider>({{poolStats.global.totalPayments}} Payments)</a></span>
 					</md-card-title-text>
 				</md-card-title>
 			</md-card>
