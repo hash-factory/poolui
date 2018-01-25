@@ -14,7 +14,7 @@
 					</md-card-title-text>  -->
 					<md-card-title-text>
 						<span class="md-headline">Electroneum Highlight</span>
-						<span class="md-subhead">Electroneum made two big announcements, firstly that they are to list on HitBTC and secondly that mobile mining beta has started.(<a href="https://www.directorstalkinterviews.com/electroneum-trade-hitbtc-mobile-mining-beta-live/412744181" target="_blank">Read more</a>)</span>
+						<span class="md-subhead"> Electroneum Agreement No.4 The FanFare Video Sharing platform.(<a href="https://www.directorstalkinterviews.com/electroneum-team-fanfare-video-sharing-platform/412744210" target="_blank">Read more</a>)</span>
 					</md-card-title-text>
 				</md-card-title>
 			</md-card>
@@ -83,7 +83,11 @@
 					</md-card-title-media>
 					<md-card-title-text>
 						<span class="md-headline">${{etnusd}}</span>
-						<span class="md-subhead">ETN Price</span>
+						<div class="md-subhead">
+							<span>ETN Price</span>
+							<md-divider md-inset></md-divider>
+							<span class="md-subhead"><a href="#/home">Overall effort {{overallEffort | number:2 }} %</a></span>
+						</div>	
 					</md-card-title-text>
 					<md-card-title-text>
 						<span class="md-headline">${{((1000/network.difficulty)*86400*7*(network.value | toXMR)*etnusd) | number}}</span>
