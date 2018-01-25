@@ -28,7 +28,7 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	{
 		type: 'Username',
 		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa',
-		desc: 'Standard wallet address (Monero CLI wallet/Monero GUI wallet/MyMonero wallet)',
+		desc: 'Standard wallet address (AEON CLI wallet/AEON GUI wallet/AEONPocket wallet)',
 		valid: true
 	},
 	{
@@ -40,7 +40,7 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	{
 		type: 'Username',
 		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa',
-		desc: 'Integrated address, good for withdrawing to an exchange (eg. Poloniex, Kraken, TuxExchange), or if you want to use an integrated address',
+		desc: 'Integrated address, good for withdrawing to an exchange (eg. Bittrex, HitBTC), or if you want to use an integrated address',
 		valid: true
 	},
 	{
