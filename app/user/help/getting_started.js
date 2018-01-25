@@ -27,25 +27,25 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.samples=[
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW',
-		desc: 'Standard wallet address (Monero CLI wallet/Monero GUI wallet/MyMonero wallet)',
+		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E',
+		desc: 'Standard wallet address (Electroneum CLI wallet/Electroneum GUI wallet/Paper wallet)',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW+3500',
+		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E+80000',
 		desc: 'Standard wallet address with fixed difficulty of 3500 for the worker',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: '4DAU4uMdnDtFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKF82nvn2H6jg9SUywAX',
-		desc: 'Integrated address, good for withdrawing to an exchange (eg. Poloniex, Kraken, TuxExchange), or if you want to use an integrated address',
+		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E',
+		desc: 'Integrated address, good for withdrawing to an exchange (eg. Cryptopia, HitBTC), or if you want to use an integrated address',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
+		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
 		desc: 'Standard address with paymentID, good for withdrawing to an exchange that does not use an integrated address, or if you want to use a specific paymentID',
 		valid: true
 	},
