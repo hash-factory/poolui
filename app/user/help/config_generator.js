@@ -17,7 +17,7 @@ app.controller('ConfigGeneratorCtrl', function($scope) {
 	$scope.example_attr = {
 		'with_mail': false,
 		'with_worker_id': false,
-    'with_pool_address' : 'aeon-pool.semipool.com',
+    'with_pool_address' : 'pool.aeon.semipool.com',
     'with_custom_wallet': 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa',
     'with_custom_worker': 'MyWorker',
     'with_custom_email': 'me@email.com',
