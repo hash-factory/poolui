@@ -1,6 +1,6 @@
 {
-  "name": "xmrpoolui",
-  "description": "UI for XMR Pool.net",
+  "name": "semipoolui",
+  "description": "UI for semiPOOL.com",
   "repository": "",
   "license": "?",
   "devDependencies": {
