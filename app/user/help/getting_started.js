@@ -34,18 +34,18 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	{
 		type: 'Username',
 		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E+80000',
-		desc: 'Standard wallet address with fixed difficulty of 3500 for the worker',
+		desc: 'Standard wallet address with fixed difficulty of 80000 for the worker',
 		valid: true
 	},
 	{
 		type: 'Username',
 		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E',
-		desc: 'Integrated address, good for withdrawing to an exchange (eg. Cryptopia, HitBTC), or if you want to use an integrated address',
+		desc: 'Integrated address, good for withdrawing to an exchange (not yet, for Cryptopia please use paymentID), or if you want to use an integrated address',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: 'etnjvNoyqUAiJx7yZYWLsA6dzezF886YmCgftGksaDfj43o8RdUsNBmdFzRkZPpqQJYJ1pbmAWt7jKXSpAd31Ta83iFC9D7u9E.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
+		sample: 'etnjzKFU6ogESSKRZZbdqraPdcKVxEC17Cm1Xvbyy76PARQMmgrgceH4krAH6xmjKwJ3HtSAKuyFm1BBWYqtchtq9tBap8Qr4M.e14ea5e66edee64f7e2cf5aac806365418b0c21aa050bad82db7eae00f0403f6',
 		desc: 'Standard address with paymentID, good for withdrawing to an exchange that does not use an integrated address, or if you want to use a specific paymentID',
 		valid: true
 	},
