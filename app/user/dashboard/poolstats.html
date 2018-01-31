@@ -68,7 +68,7 @@
 					</md-card-title-text>
 					<md-card-title-text>
 						<span class="md-headline">{{poolStats.global.totalMinersPaid}}</span>
-						<span class="md-subhead">Miners Paid <a href="#/payments"><md-divider md-inset></md-divider>({{poolStats.global.totalPayments}} Payments)</a></span>
+						<span class="md-subhead">Miners Paid <a href="#/payments"><md-divider md-inset></md-divider>{{poolStats.global.totalPayments}} Payments</a></span>
 					</md-card-title-text>
 				</md-card-title>
 			</md-card>
@@ -91,7 +91,9 @@
 					</md-card-title-text>
 					<md-card-title-text>
 						<span class="md-headline">${{((1000/network.difficulty)*86400*7*(network.value | toXMR)*etnusd) | number}}</span>
-						<span class="md-subhead">Est. Revenue (1kH/s,per week)</span>
+						<span class="md-subhead">Est. Revenue</span>
+						<md-divider md-inset></md-divider>
+						<span class="md-subhead">(1 kH/s,per week)</span>						
 					</md-card-title-text>
 				</md-card-title>
 			</md-card>
