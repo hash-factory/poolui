@@ -23,7 +23,7 @@ angular.module('utils.strings', [])
 
 .filter('hashToLink', function($sce) {
   return function(hash, type) {
-    var str = (hash == undefined) ? 'none' : "<a class=\"md-body-2\" target=\"_new\" href=\"https://http://blockexplorer.graft.network/"+type+"/" + hash + "\">" + hash + "</a>";
+    var str = (hash == undefined) ? 'none' : "<a class=\"md-body-2\" target=\"_new\" href=\"https://blockexplorer.graft.network/"+type+"/" + hash + "\">" + hash + "</a>";
     return $sce.trustAsHtml(str); 
   };
 })
