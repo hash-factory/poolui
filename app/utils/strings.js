@@ -4,7 +4,7 @@ angular.module('utils.strings', [])
 
 .filter('toXMR', function() {
   return function(amount) {
-    return amount / 1000000000000;
+    return amount / 10000000000;
   };
 })
 
@@ -23,14 +23,14 @@ angular.module('utils.strings', [])
 
 .filter('hashToLink', function($sce) {
   return function(hash, type) {
-    var str = (hash == undefined) ? 'none' : "<a class=\"md-body-2\" target=\"_new\" href=\"https://chainradar.com/aeon/"+type+"/" + hash + "\">" + hash + "</a>";
+    var str = (hash == undefined) ? 'none' : "<a class=\"md-body-2\" target=\"_new\" href=\"https://http://blockexplorer.graft.network/"+type+"/" + hash + "\">" + hash + "</a>";
     return $sce.trustAsHtml(str); 
   };
 })
 
 .filter('difficultyToHashRate', function() {
   return function(hashrate) {
-    return Math.floor(hashrate / 240)
+    return Math.floor(hashrate / 120)
   };
 });
 
