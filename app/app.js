@@ -219,7 +219,11 @@ var app = angular.module('poolui', [
 			$.getJSON("https://api.coinmarketcap.com/v1/ticker/electroneum/?convert=USD", function(data) {
 				$scope.etnusd = (data[0].price_usd * 1).toFixed(3);						// CRYPTONATOR XMR/USD RATE
 				//$scope.etnweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.etnusd;
-			});				
+			});
+	        	$.getJSON("https://api.coinmarketcap.com/v1/ticker/aeon/?convert=USD", function(data) {
+				$scope.grftusd = 0.0221;						// Unlisted
+				//$scope.aeonweekrev = (1000/$scope.network.difficulty)*86400*7*$scope.network.value*$scope.aeonusd;
+			});			
 		}
 
 		var loadOnce = function () {
