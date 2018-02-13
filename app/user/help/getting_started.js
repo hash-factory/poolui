@@ -27,25 +27,25 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.samples=[
 	{
 		type: 'Username',
-		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa',
-		desc: 'Standard wallet address (AEON CLI wallet/AEON GUI wallet/AEONPocket wallet)',
+		sample: 'G4u54VjPLjR8WEWkaWwAe3JTiUu1rjebvgefNhiawsHNYcr2nVUJDZpVBhVuHbstATBetFvnV5M7PLEuVSFxSpPNHBrYtuT',
+		desc: 'Standard wallet address (Graft CLI wallet/AEON GUI wallet/AEONPocket wallet)',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa+3500',
+		sample: 'G4u54VjPLjR8WEWkaWwAe3JTiUu1rjebvgefNhiawsHNYcr2nVUJDZpVBhVuHbstATBetFvnV5M7PLEuVSFxSpPNHBrYtuT+3500',
 		desc: 'Standard wallet address with fixed difficulty of 3500 for the worker',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa',
+		sample: 'G4u54VjPLjR8WEWkaWwAe3JTiUu1rjebvgefNhiawsHNYcr2nVUJDZpVBhVuHbstATBetFvnV5M7PLEuVSFxSpPNHBrYtuT',
 		desc: 'Integrated address, good for withdrawing to an exchange (eg. Bittrex, HitBTC), or if you want to use an integrated address',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: 'Wms9NLr7UqrShuU4eK9bWgUSWgUjdYehsgv5hkBSZLUNcPUwBia118ATNNMKpKN9PbWwiZDMv7vu7JAASS9VWfiy1LaXt3Xoa.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
+		sample: 'G4u54VjPLjR8WEWkaWwAe3JTiUu1rjebvgefNhiawsHNYcr2nVUJDZpVBhVuHbstATBetFvnV5M7PLEuVSFxSpPNHBrYtuT.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
 		desc: 'Standard address with paymentID, good for withdrawing to an exchange that does not use an integrated address, or if you want to use a specific paymentID',
 		valid: true
 	},
