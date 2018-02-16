@@ -166,7 +166,7 @@
 				<div flex layout="column" layout-gt-xs="row">
 					<div flex>
 						<h4> Total Due<br><i>(Please check if new block is found !)</i><h2>{{miner.amtDue | toXMR | number:10}} AEON</h2></h4>
-						<h4> ( +{{(miner.pplnsShares / (network.difficulty * config.pplns_multiplier) * network.value)  * ((100 - config.pplns_fee) / 100) | toXMR | number:8}} AEON estimation if you stay until next found block) </h4>
+						<h4> ( + ...AEON estimation if you stay until next found block) </h4>
 					</div>
 					<div flex>
 						<h4> Total Paid<h2>{{miner.amtPaid | toXMR | number:10}} AEON</h2></h4>
@@ -220,7 +220,7 @@
 						
 					</div>
 					<div flex>
-						<h3> Per Min. Accumulations (# and much lower than your software shares report)<h2>{{miner.validShares | number}} <md-icon class="valid">check</md-icon></h2></h3>
+						<h3> Per Min. Accumulations <h4>(# and much lower than your software shares report)<h4><h2>{{miner.validShares | number}} <md-icon class="valid">check</md-icon></h2></h3>
 						<h3> Outdated and Bad Shares<h2>{{miner.invalidShares | number}} <md-icon class="invalid">clear</md-icon></h2></h3>
 					</div>
 				</div>
