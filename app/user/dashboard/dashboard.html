@@ -80,7 +80,7 @@
 							<div layout-xs="row" layout-sm="row" layout="column" flex>
 								<md-list flex>
 									<md-list-item>
-										<p> Fees <i>(Min wallet payout {{config.min_wallet_payout | toXMR}})</i></p>
+										<p> Fees <i>(Min wallet payout {{config.min_wallet_payout | toXMR}} AEON)</i></p>
 										<p class="text-right">{{ poolStats[pooltype].pool_statistics.fee }} %</p>
 									</md-list-item>
 									<md-list-item>
@@ -220,7 +220,7 @@
 						
 					</div>
 					<div flex>
-						<h3> Per Min. Accumulations <h4>(# and much lower than your software shares report)<h4><h2>{{miner.validShares | number}} <md-icon class="valid">check</md-icon></h2></h3>
+						<h3> Per Min. Accumulations <i>(# and much lower than your software shares report)</i><h2>{{miner.validShares | number}} <md-icon class="valid">check</md-icon></h2></h3>
 						<h3> Outdated and Bad Shares<h2>{{miner.invalidShares | number}} <md-icon class="invalid">clear</md-icon></h2></h3>
 					</div>
 				</div>
