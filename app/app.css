@@ -115,7 +115,7 @@ md-tooltip .md-content {
 }
 
 .sidenav {
-  background-color: rgb(44,55,66);
+  background-color: rgb(44,55,66,0.5);
 }
 
 .sidenav ul{
