@@ -11,6 +11,7 @@ angular.module('pool.globals', [])
 		coinCode: "AEON",
 		coinCode_lower: "aeon",
 		coinName: "AEON",
+		coinName_lower: "aeon",		
 		hightlight: "semiPOOL group always updates the best code improvement for efficiency even with risks. Risks give you better earnings",
 		hightlight_link: "https://semipool.com"
 	};
