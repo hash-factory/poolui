@@ -9,6 +9,6 @@ angular.module('pool.globals', [])
 		api_refresh_interval: 10000,
 		app_update_interval: 10*60000,
 		coinCode: "AEON",
-		coinName: "AEON
+		coinName: "AEON"
 	};
 });
