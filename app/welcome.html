@@ -2,7 +2,7 @@
 	<div>
 		<div class="md-headline nowrap"><strong>Welcome to <span style="font-size: 85%; vertical-align: 18%"> semi</span><span style="font-size: 100%">POOL</span><span style="font-size: 80%">.com </span></strong>
 		</div>
-		<div class="md-subhead nowrap">Your new discovery for the best AEON mining !<br>
+		<div class="md-subhead nowrap">Your new discovery for the best {{GLOBALS.coinName}} mining !<br>
 		</div>
 	</div>
 	<div class="welcome">
@@ -15,13 +15,13 @@
 			<p> Download the xmrig for Windows from <a href="http://www.goalextra.com/xmrigwin" target="_blank">our repos</a> or <a href="https://github.com/xmrig/xmrig/releases" target="_blank"> original source</a>
 			</p>
 			<ul>
-                                <li>Autolocation URL : "pool.aeon.semipool.com:5555"</li>
+                                <li>Autolocation URL : "pool.{{GLOBALS.coinCode_lower}}.semipool.com:5555"</li>
                                 <li>User             : "yourWalletAddress"</li>
                                 <li>Pass             : "x" or "workerID:yourEmail"</li>
                                 <li>Difficulty       : "yourWalletAdress+fixedDifficult"</li> 
-				<li>Exchange         : Mining to an exchange is a bad idea and should not be encouraged.</li>
+				<li>Exchange         : "yourWalletAdress.paymentID", mining to an exchange is a bad idea and should not be encouraged.</li>
                         </ul>
-			<p> For Botnet/Web mining : My forked <a href="https://github.com/bobbieltd/xmr-node-proxy" target="_blank">xmr-node-proxy</a> is integrated and tested with ETN,AEON,XMR and SUMO. You can download it <a href="https://github.com/bobbieltd/xmr-node-proxy" target="_blank">here</a>
+			<p> For proxy mining : My forked <a href="https://github.com/bobbieltd/xmr-node-proxy" target="_blank">xmr-node-proxy</a> is integrated and tested with ETN,AEON,XMR and SUMO. You can download it <a href="https://github.com/bobbieltd/xmr-node-proxy" target="_blank">here</a>
 			</p>
 	</div>
 		<h4>Why shoud you choose us ?</h4>
@@ -30,12 +30,14 @@
 				<li>GeoDNS     : Automatic nearest server selection based on geo position</li>
 				<li>AutoProxy  : If you have more than 100 miners, xmr-node-proxy could be deployed on the fly to optimize your hashrate</li>
 				<li>Long-term  : We use this pool for our personal miners too so we'll always improve the pool</li>
-				<li>Fee        : Fee is used for running costs. We donate a part of fee to pool and AEON developers</li>
 				<li>Support    : Discord/Facebook Page/Email</li>
 			</ul>
+	        <h4>All semiPOOL pools policy</h4>
+				<li>Fee        : We keep fees at 0.1% now and in the future</li>
+				<li>Expansion  : Every 2 Mh/s pool hashrate and 100 miners increase, we'll deploy new servers (new continent priority)</li>
 		<h4>Configuration (PPLNS)</h4>
 			<ul>
-				<li>Autolocation URL : pool.aeon.semipool.com</li>
+				<li>Autolocation URL : pool.{{GLOBALS.coinCode_lower}}.semipool.com</li>
 				<li>Port 3333        : Var. Diff. starts at   1000, from 10 H/s </li>
 				<li>Port 5555        : Var. Diff. starts at  20000, from 1 kH/s</li>
 				<li>Port 7777        : Var. Diff. starts at 160000, from 8 kH/s and more</li>
@@ -47,9 +49,8 @@
 			</ul>
 		<h4>Next Features</h4>
 			<ul>
-				<li>At the moment, our servers are based in France and testing servers in other locations </li>
-				<li>Global deployments (Q2 2018) : India, China, Japan</li>
-				<li>Multiple coins mining option (Q4 2018)</li>
+				<li>xmr-node-proxy and pools communication to switch coins (Q2 2018)</li>
+				<li>Multiple coins tracking on same dashboard (Q4 2018)</li>
 			</ul>
 		<h4>Support</h4>
 			<ul>
