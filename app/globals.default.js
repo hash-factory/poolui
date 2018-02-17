@@ -9,6 +9,8 @@ angular.module('pool.globals', [])
 		api_refresh_interval: 10000,
 		app_update_interval: 10*60000,
 		coinCode: "AEON",
-		coinName: "AEON"
+		coinName: "AEON",
+		hightlight: "semiPOOL group always updates the best code improvement for efficiency even with risks. Risks give you better earnings",
+		hightlight_link: "https://semipool.com"
 	};
 });
