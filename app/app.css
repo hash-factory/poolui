@@ -20,7 +20,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-color: transparent;
-	background-image:url(assets/bg.jpg)}
+	background-image: url(assets/background.jpg);
+}
+
 a {
   transition: color .4s;
   color: rgb(0, 130, 130); 
