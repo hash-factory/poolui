@@ -28,13 +28,13 @@
   <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '9fPY'});</script>
  --><!-- CHAT -->
 </head>
-<body ng-cloak layout="column" ng-controller="AppCtrl">
+<body layout="column">
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
       <div class="container" layout="row" flex>
-        <md-sidenav md-is-locked-open="menuOpen" md-component-id="left" md-whiteframe="4" class="sidenav">
+        <md-sidenav md-is-locked-open="menuOpen" md-component-id="left" md-whiteframe="4" ng-click="closeSidenav()" class="sidenav">
           <md-toolbar class="logo">
 			<span class="md-toolbar-tools" style="text-align: center; position: ">
 				<strong><span>{{GLOBALS.coinCode}}</span><span style="font-size: 140%; color: rgb(255, 153, 0); vertical-align: -23%;">semiPOOL</span><span style="vertical-align: -31%;"> </span></strong>
@@ -44,7 +44,7 @@
             <md-list-item>
               <md-button href="#/home" ng-class="isActivePage('home')">
 <!--                <md-icon md-font-set="material-icons" class="menu-item">home</md-icon> -->
-		<img class="menu-item material-icons" style="width: 60px!important; margin: 6px!important;" src="assets/{{GLOBALS.coinName}}30x36.png">		      
+		<img class="menu-item material-icons" style="width: 60px!important; margin: 6px!important;" src="assets/{{GLOBALS.coinName_lower}}30x36.png">		      
                 Home
               </md-button>
             </md-list-item>
