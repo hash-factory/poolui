@@ -50,7 +50,7 @@ a:active  {
 /*** Material Styles ***/
 md-card {
   overflow: hidden;
-  background-color: rgb(215, 215, 215);
+/*  background-color: rgb(215, 215, 215); */
 }
 
 .md-headline {
@@ -123,7 +123,7 @@ md-tooltip .md-content {
 }
 
 .sidenav {
-  background-color: rgb(44,55,66,0.9);
+  background-color: rgb(44,55,66);
 }
 
 .sidenav ul{
