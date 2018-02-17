@@ -20,7 +20,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-color: transparent;
-	background-image: url(assets/background.jpg);
+	background-image: url("assets/background.jpg");
 }
 
 a {
