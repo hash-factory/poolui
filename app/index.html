@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html lang="en" ng-app="poolui" class="no-js lt-ie9" manifest="app.manifest"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="poolui" class="no-js" manifest="app.manifest"> <!--<![endif]-->
 <head>
-  <title>{{config.coinCode}}.semiPOOL.com - your pool for awesome {{config.coinCode}} Mining!</title>
+  <title>{{GLOBALS.coinCode}}.semiPOOL.com - your pool for awesome {{GLOBALS.coinName}} Mining!</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -40,14 +40,14 @@
         <md-sidenav md-is-locked-open="menuOpen" md-component-id="left" md-whiteframe="4" class="sidenav">
           <md-toolbar class="logo">
 			<span class="md-toolbar-tools" style="text-align: center; position: ">
-				<strong><span>AEON</span><span style="font-size: 140%; color: rgb(255, 153, 0); vertical-align: -23%;">semiPOOL</span><span style="vertical-align: -31%;"> </span></strong>
+				<strong><span>{{GLOBALS.coinCode}}</span><span style="font-size: 140%; color: rgb(255, 153, 0); vertical-align: -23%;">semiPOOL</span><span style="vertical-align: -31%;"> </span></strong>
 			</span>
           </md-toolbar>
           <md-list>
             <md-list-item>
               <md-button href="#/home" ng-class="isActivePage('home')">
 <!--                <md-icon md-font-set="material-icons" class="menu-item">home</md-icon> -->
-		<img class="menu-item material-icons" style="width: 60px!important; margin: 6px!important;" src="assets/aeon30x36.png">		      
+		<img class="menu-item material-icons" style="width: 60px!important; margin: 6px!important;" src="assets/{{GLOBALS.coinName}}30x36.png">		      
                 Home
               </md-button>
             </md-list-item>
